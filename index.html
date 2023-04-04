@@ -1,12 +1,54 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <title>My Vacation Weather Dashboard </title>
 </head>
+
 <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <h2 class="search-title">Search for a city:</h2>
+            <form id="search-form">
+              <input type="text" id="search-input" name="search-input" required autofocus>
+              <button type="submit" id="search-button">Search</button>
+            </form>
+            <section id="search-history">
+                <div> <hr></div>
+                <ul id="history-list">
+                </ul>
+              </section>
+          </div>
+          
+      <div class="weather-container">
+        <section id="current-weather">
+          <h2><span id="city-name"></span> <span id="date"></span><span id="current-weather-info"></span></h2>
+
+          <div> <img id="weather-icon" alt="Weather icon"> </div>
+          <div >
+           
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+          </div>
+        </section>
+        <section id="forecast">
+          <h2>5-Day Forecast</h2>
+          <div id="forecast-cards"></div>
+        </section>
+      </div>
+      
+    </main>
     
+    <script src="Assets/js/script.js"></script>
 </body>
+  
+  
+  
 </html>
